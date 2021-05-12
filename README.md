@@ -19,4 +19,8 @@ $ yarn generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
+## Тестовое задание
+
+Примерный макет:
+
 ![Примерный макет](https://github.com/mansMS/fabrique-test/blob/master/assets/model.jpg)
