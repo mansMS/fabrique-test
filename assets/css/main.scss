@@ -1,0 +1,159 @@
+@import './colors';
+
+// @font-face {
+//   font-family: "Genos";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: url("./fonts/Genos-Regular.ttf") format("truetype");
+// }
+
+// @font-face {
+//   font-family: "Genos";
+//   font-style: normal;
+//   font-weight: 700;
+//   font-display: swap;
+//   src: url("@/assets/css/fonts/Genos-Bold.ttf") format("truetype");
+// }
+
+h2 {
+  font-weight: bold;
+  color: $grey;
+}
+
+h3 {
+  font-weight: bold;
+  color: $grey;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid $grey;
+  border-radius: 0.5rem;
+  outline: none;
+
+  &:focus {
+    border-color: $dark-grey;
+  }
+}
+
+.button {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  outline: none;
+  cursor: pointer;
+
+  &__add {
+    position: relative;
+    padding-left: 2rem;
+    background: none;
+    color: $light-green;
+    border: 1px solid $light-green;
+
+    &::before {
+      content: "+";
+      position: absolute;
+      top: 0;
+      left: 0.5rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__remove {
+    position: relative;
+    padding-left: 2rem;
+    background: none;
+    color: $light-red;
+    border: 1px solid $red;
+
+    &::before {
+      content:  '';
+      position: absolute;
+      top: 0;
+      left: 0.5rem;
+      height: 2rem;
+      width: 1.1rem;
+      background: url("@/assets/images/trash.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__next {
+    position: relative;
+    padding-right: 2rem;
+    color: $light-grey;
+    background-color: $green;
+    border: none;
+
+    &::before {
+      content: "→";
+      position: absolute;
+      top: 0;
+      right: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+  }
+
+  &__done {
+    color: $light-grey;
+    background-color: $green;
+    border: none;
+  }
+}
+
+.stage {
+  &__block {
+    padding: 2rem;
+
+    &:not(:first-child) {
+      border-top: 1px solid $grey;
+    }
+  }
+
+  &__footer {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.param {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+
+  &__name {
+    width: 10rem;
+    font-weight: bold;
+    line-height: 42px;
+  }
+
+  &__field {
+    flex-grow: 1;
+  }
+}
+
+.value {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  &__name {
+    width: 10rem;
+    line-height: 42px;
+  }
+
+  &__field {
+    flex-grow: 1;
+  }
+}
+
+.block-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 2rem 0 0 10rem;
+}
