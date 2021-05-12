@@ -18,3 +18,5 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+![Примерный макет](https://github.com/mansMS/fabrique-test/blob/master/assets/model.jpg)
